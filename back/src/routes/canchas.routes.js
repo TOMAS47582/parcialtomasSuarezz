@@ -1,7 +1,9 @@
-const { Router } = require("express");
+const { Router } = require('express');
+const { listarCanchas } = require('../controllers/canchasController');
+
 const router = Router();
 
-// TODO: importar el controlador y definir GET /.
+router.get('/', listarCanchas);
 
 module.exports = router;
 
