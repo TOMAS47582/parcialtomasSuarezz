@@ -3,9 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
-const canchasRoutes = require('./routes/canchasRoutes');
-const reservasRoutes = require('./routes/reservasRoutes');
-const reportesRoutes = require('./routes/reportesRoutes');
+const canchasRoutes = require('./routes/canchas.routes');
+const reservasRoutes = require('./routes/reservas.routes');
+const reportesRoutes = require('./routes/reportes.routes');
 
 const app = express();
 

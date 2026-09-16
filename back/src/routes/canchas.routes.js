@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { listarCanchas } = require('../controllers/canchasController');
+const { listarCanchas } = require('../controllers/canchas.controller');
 
 const router = Router();
 

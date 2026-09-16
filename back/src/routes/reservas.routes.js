@@ -3,7 +3,7 @@ const {
   listarReservas,
   crearReserva,
   registrarPago,
-} = require('../controllers/reservasController');
+} = require('../controllers/reservas.controller');
 
 const router = Router();
 

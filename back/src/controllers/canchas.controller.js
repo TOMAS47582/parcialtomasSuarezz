@@ -7,6 +7,7 @@ async function listarCanchas(req, res) {
     const resultado = await pool.request().execute('usp_ListarCanchas');
     res.json(resultado.recordset);
   } catch (err) {
+    console.error(err);
     const { status, mensaje } = mapSqlError(err);
     res.status(status).json({ error: mensaje });
   }

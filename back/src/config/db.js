@@ -9,6 +9,7 @@ const config = {
   options: {
     encrypt: false,
     trustServerCertificate: true,
+    ...(process.env.DB_INSTANCE ? { instanceName: process.env.DB_INSTANCE } : {}),
   },
 };
 
